@@ -31,13 +31,15 @@ class DescriptionVC: UIViewController {
         
         navigationItem.title = personChosen[personIndex].name
         
-        print("Should be the name on the navigation bar.. \(personChosen[personIndex])")
-        print("")
-        guard let DOB = personChosen[personIndex].dateOfBirth else { return }
-        actorLabel.text = "Actor: \(personChosen[personIndex].actor)"
-        ancestoryLabel.text = "Ancestory: \(personChosen[personIndex].ancestry)"
-        DOBLabel.text = "DOB: \(DOB)"
-        houseLabel.text = "House: \(personChosen[personIndex].house)"
+//        print("Should be the name on the navigation bar.. \(personChosen[personIndex])")
+//        print("")
+//        guard let DOB = personChosen[personIndex].dateOfBirth else { return }
+//        actorLabel.text = "Actor: \(personChosen[personIndex].actor)"
+//        ancestoryLabel.text = "Ancestory: \(personChosen[personIndex].ancestry)"
+//        DOBLabel.text = "DOB: \(DOB)"
+//        houseLabel.text = "House: \(personChosen[personIndex].house)"
+        
+        settingUpView()
         
     
         
