@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct PersonData: Codable {
     
     let name: String
@@ -25,7 +24,6 @@ struct PersonData: Codable {
     let hogwartsStaff: Bool
     let actor: String
     let image: String
-    
 
     
     

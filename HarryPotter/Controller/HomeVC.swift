@@ -10,6 +10,8 @@ import UIKit
 class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
+    
+    
     let data = CategorySet()
     var categoryToPass: String?
 

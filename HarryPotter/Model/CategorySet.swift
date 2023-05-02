@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CategorySet {
+struct CategorySet {
     let people_Categories = [
         Category(title: "All", imageName: "students"),
         Category(title: "Students", imageName: "students"),

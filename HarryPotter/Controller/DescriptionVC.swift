@@ -29,25 +29,32 @@ class DescriptionVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = personChosen[personIndex].name
         
-        navigationItem.title = personChosen[personIndex].eyeColour
+        print("Should be the name on the navigation bar.. \(personChosen[personIndex])")
+        print("")
         guard let DOB = personChosen[personIndex].dateOfBirth else { return }
-        
-        
-        print(personChosen[personIndex].name)
-//        actorLabel.text = "Actor: \(personChosen[personIndex].actor)"
         actorLabel.text = "Actor: \(personChosen[personIndex].actor)"
         ancestoryLabel.text = "Ancestory: \(personChosen[personIndex].ancestry)"
         DOBLabel.text = "DOB: \(DOB)"
         houseLabel.text = "House: \(personChosen[personIndex].house)"
+        
     
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        settingUpView()
     }
     
     func settingUpView() {
         let person = personChosen[personIndex]
         guard let DOB = person.dateOfBirth else { return }
-
+        //        actorLabel.text = "Actor: \(personChosen[personIndex].actor)"
+        actorLabel.text = "Actor: \(personChosen[personIndex].actor)"
+        ancestoryLabel.text = "Ancestory: \(personChosen[personIndex].ancestry)"
+        DOBLabel.text = "DOB: \(DOB)"
+        houseLabel.text = "House: \(personChosen[personIndex].house)"
         
     } // settingUpView
 

@@ -15,7 +15,6 @@ class SpellsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     
-    
     override func viewDidLoad() {
         tableView.delegate = self
         tableView.dataSource = self
