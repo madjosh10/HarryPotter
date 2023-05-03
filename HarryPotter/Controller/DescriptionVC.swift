@@ -23,40 +23,37 @@ class DescriptionVC: UIViewController {
     @IBOutlet weak var DOBLabel: UILabel!
     @IBOutlet weak var houseLabel: UILabel!
     
-    var personChosen: [PersonData]!
-    var personIndex: Int!
+    var person: PersonData!
         
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = personChosen[personIndex].name
-        
-//        print("Should be the name on the navigation bar.. \(personChosen[personIndex])")
-//        print("")
-//        guard let DOB = personChosen[personIndex].dateOfBirth else { return }
-//        actorLabel.text = "Actor: \(personChosen[personIndex].actor)"
-//        ancestoryLabel.text = "Ancestory: \(personChosen[personIndex].ancestry)"
-//        DOBLabel.text = "DOB: \(DOB)"
-//        houseLabel.text = "House: \(personChosen[personIndex].house)"
-        
-        settingUpView()
-        
-    
+        navigationItem.title = person.name
+        settingUpView(personChosen: person)
         
     }
+
     
-    override func viewWillAppear(_ animated: Bool) {
-        settingUpView()
-    }
-    
-    func settingUpView() {
-        let person = personChosen[personIndex]
-        guard let DOB = person.dateOfBirth else { return }
-        //        actorLabel.text = "Actor: \(personChosen[personIndex].actor)"
-        actorLabel.text = "Actor: \(personChosen[personIndex].actor)"
-        ancestoryLabel.text = "Ancestory: \(personChosen[personIndex].ancestry)"
+    func settingUpView(personChosen person: PersonData) {
+        // nil coalescing
+        let DOB:String = person.dateOfBirth ?? "Not Given"
+        let yearOfBith: Int = person.yearOfBirth ?? 0
+        
+        
+
+        actorLabel.text = "Actor: \(person.actor)"
+        speciesLabel.text = "Species: \(person.species)"
+        ancestoryLabel.text = "Ancestory: \(person.ancestry)"
         DOBLabel.text = "DOB: \(DOB)"
-        houseLabel.text = "House: \(personChosen[personIndex].house)"
+        houseLabel.text = "House: \(person.house)"
+        genderLabel.text = "Gender: \(person.gender)"
+        wizardLabel.text = "Wizard: \(person.wizard)"
+        eyeColourLabel.text = "Eye Color: \(person.eyeColour)"
+        hairColourLabel.text = "Hair Color: \(person.hairColour)"
+        patronusLabel.text = "Patronus: \(person.patronus)"
+        hogwartsStaff.text = "Staff: \(person.hogwartsStaff)"
+        hogwartsStudent.text = "Student: \(person.hogwartsStudent)"
+        
         
     } // settingUpView
 

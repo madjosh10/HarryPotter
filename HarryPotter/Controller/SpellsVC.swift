@@ -10,10 +10,8 @@ import UIKit
 
 class SpellsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
     private var spellsArray: [SpellsData] = []
     @IBOutlet weak var tableView: UITableView!
-    
     
     override func viewDidLoad() {
         tableView.delegate = self
@@ -22,7 +20,6 @@ class SpellsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         getSpells()
         
     }
-    
     
     func getSpells() {
         URLSession.shared.request(

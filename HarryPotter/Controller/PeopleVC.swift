@@ -28,6 +28,8 @@ class PeopleVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 fetchStudent()
             case "staff":
                 fetchStaff()
+            case "all":
+                fetchAll()
             default:
                 break
         }
@@ -74,6 +76,10 @@ class PeopleVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
         }
     }
+    func fetchAll() {
+        
+        
+    }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -105,8 +111,7 @@ class PeopleVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let descriptionVC = segue.destination as? DescriptionVC {
-            descriptionVC.personChosen = peopleArray
-            descriptionVC.personIndex = selectedIndex
+            descriptionVC.person = peopleArray[selectedIndex]
         }
     }
 

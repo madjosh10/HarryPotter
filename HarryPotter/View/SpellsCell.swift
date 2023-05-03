@@ -9,10 +9,8 @@ import UIKit
 
 class SpellsCell: UITableViewCell {
     
-    
     @IBOutlet weak var spellTitle: UILabel!
     @IBOutlet weak var spellDescription: UILabel!
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()

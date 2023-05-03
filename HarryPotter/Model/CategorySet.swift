@@ -12,11 +12,12 @@ struct CategorySet {
         Category(title: "All", imageName: "students"),
         Category(title: "Students", imageName: "students"),
         Category(title: "Staff", imageName: "staff"),
-        Category(title: "Spells", imageName: "wands"),
-        Category(title: "Houses", imageName: "house")
     ]
     
     let houses = [
-        Category(title: "Gryffindor", imageName: "")
+        Category(title: "Gryffindor", imageName: ""),
+        Category(title: "Slytherin", imageName: ""),
+        Category(title: "Hufflepuff", imageName: ""),
+        Category(title: "Raveclaw", imageName: "")
     ]
 }

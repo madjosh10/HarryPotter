@@ -24,7 +24,6 @@ struct PersonData: Codable {
     let hogwartsStaff: Bool
     let actor: String
     let image: String
-
     
     
 } // end character Struct
