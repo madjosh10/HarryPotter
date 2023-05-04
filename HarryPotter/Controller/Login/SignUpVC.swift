@@ -19,5 +19,7 @@ class SignUpVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func signUpClicked(_ sender: Any) {
+    }
+    
 }
