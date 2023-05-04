@@ -29,3 +29,10 @@ let hufflepuffBlack = UIColor(red: 0, green: 0, blue: 0, alpha: 0.0)
 
 let ravenclawBlue = UIColor(red: 14, green: 26, blue: 64, alpha: 0.0)
 let ravenclawBronze = UIColor(red: 148, green: 107, blue: 45, alpha: 0.0)
+
+
+let HOME = "home"
+
+// identifiers
+let CATEGORY_CELL : String = "categoryCell"
+let TO_CATEGORY_SELECTED : String = "toCategorySelected"

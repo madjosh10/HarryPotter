@@ -11,7 +11,6 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
     
-    
     let data = CategorySet()
     var categoryToPass: String?
 
@@ -20,7 +19,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         tableView.delegate = self
         tableView.dataSource = self
         
-        navigationItem.title = "Home"
+        navigationItem.title = HOME
         
     }
     
@@ -30,7 +29,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as? CategoryCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: CATEGORY_CELL, for: indexPath) as? CategoryCell {
             
             cell.configureCell(category: data.people_Categories[indexPath.row])
             return cell
@@ -44,7 +43,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         categoryToPass = (data.people_Categories[indexPath.row].title)
-        performSegue(withIdentifier: "toCategorySelected", sender: self)
+        performSegue(withIdentifier: TO_CATEGORY_SELECTED, sender: self)
         
     }
     

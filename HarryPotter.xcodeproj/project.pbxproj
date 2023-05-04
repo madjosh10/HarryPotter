@@ -10,6 +10,10 @@
 		0371EB6D29D6247600D508F6 /* SpellsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0371EB6C29D6247600D508F6 /* SpellsData.swift */; };
 		0371EB7A29DE0B4F00D508F6 /* SpellsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0371EB7929DE0B4F00D508F6 /* SpellsVC.swift */; };
 		0371EB7C29DE0BFB00D508F6 /* HouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0371EB7B29DE0BFB00D508F6 /* HouseVC.swift */; };
+		038B6E862A04197500EE5B28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 038B6E852A04197500EE5B28 /* GoogleService-Info.plist */; };
+		038B6E882A041FCE00EE5B28 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B6E872A041FCE00EE5B28 /* User.swift */; };
+		038B6E8B2A043C5400EE5B28 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B6E8A2A043C5400EE5B28 /* LoginVC.swift */; };
+		038B6E8D2A043CE000EE5B28 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B6E8C2A043CE000EE5B28 /* SignUpVC.swift */; };
 		038E26FF29F838E900B29EE0 /* SpellsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038E26FE29F838E900B29EE0 /* SpellsCell.swift */; };
 		03D4F80D299EF8B300B7ACDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D4F80C299EF8B300B7ACDE /* AppDelegate.swift */; };
 		03D4F80F299EF8B300B7ACDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D4F80E299EF8B300B7ACDE /* SceneDelegate.swift */; };
@@ -26,12 +30,17 @@
 		03D4F837299F39BE00B7ACDE /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D4F836299F39BE00B7ACDE /* PeopleCell.swift */; };
 		03D4F839299FED2D00B7ACDE /* DescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D4F838299FED2D00B7ACDE /* DescriptionVC.swift */; };
 		03D4F83B299FEE6D00B7ACDE /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D4F83A299FEE6D00B7ACDE /* APIHandler.swift */; };
+		3F9E1C8B7D700CA9A59F9D20 /* Pods_HarryPotter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598E3ED4063B9BB37FC5C05F /* Pods_HarryPotter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0371EB6C29D6247600D508F6 /* SpellsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsData.swift; sourceTree = "<group>"; };
 		0371EB7929DE0B4F00D508F6 /* SpellsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsVC.swift; sourceTree = "<group>"; };
 		0371EB7B29DE0BFB00D508F6 /* HouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseVC.swift; sourceTree = "<group>"; };
+		038B6E852A04197500EE5B28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		038B6E872A041FCE00EE5B28 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		038B6E8A2A043C5400EE5B28 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		038B6E8C2A043CE000EE5B28 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		038E26FE29F838E900B29EE0 /* SpellsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsCell.swift; sourceTree = "<group>"; };
 		03D4F809299EF8B300B7ACDE /* HarryPotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarryPotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D4F80C299EF8B300B7ACDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +59,9 @@
 		03D4F836299F39BE00B7ACDE /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
 		03D4F838299FED2D00B7ACDE /* DescriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionVC.swift; sourceTree = "<group>"; };
 		03D4F83A299FEE6D00B7ACDE /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		598E3ED4063B9BB37FC5C05F /* Pods_HarryPotter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarryPotter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CD8BD38BBA6AC6E1554D486 /* Pods-HarryPotter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarryPotter.debug.xcconfig"; path = "Target Support Files/Pods-HarryPotter/Pods-HarryPotter.debug.xcconfig"; sourceTree = "<group>"; };
+		FD14FCBC9F7D904797CBB22B /* Pods-HarryPotter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarryPotter.release.xcconfig"; path = "Target Support Files/Pods-HarryPotter/Pods-HarryPotter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,17 +69,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9E1C8B7D700CA9A59F9D20 /* Pods_HarryPotter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		038B6E892A043BF400EE5B28 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				038B6E8A2A043C5400EE5B28 /* LoginVC.swift */,
+				038B6E8C2A043CE000EE5B28 /* SignUpVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		03D4F800299EF8B300B7ACDE = {
 			isa = PBXGroup;
 			children = (
 				03D4F80B299EF8B300B7ACDE /* HarryPotter */,
 				03D4F80A299EF8B300B7ACDE /* Products */,
+				285FBB33B2F5584AAF2C0028 /* Pods */,
+				C315F8880801E4D02F0B36B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +117,7 @@
 				03D4F815299EF8BB00B7ACDE /* Assets.xcassets */,
 				03D4F817299EF8BB00B7ACDE /* LaunchScreen.storyboard */,
 				03D4F81A299EF8BB00B7ACDE /* Info.plist */,
+				038B6E852A04197500EE5B28 /* GoogleService-Info.plist */,
 			);
 			path = HarryPotter;
 			sourceTree = "<group>";
@@ -104,6 +129,7 @@
 				03D4F82B299EFA0B00B7ACDE /* CategorySet.swift */,
 				03D4F82D299EFA8700B7ACDE /* PersonData.swift */,
 				0371EB6C29D6247600D508F6 /* SpellsData.swift */,
+				038B6E872A041FCE00EE5B28 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +147,7 @@
 		03D4F822299EF91A00B7ACDE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				038B6E892A043BF400EE5B28 /* Login */,
 				03D4F830299F27D900B7ACDE /* HomeVC.swift */,
 				03D4F832299F33D000B7ACDE /* PeopleVC.swift */,
 				03D4F838299FED2D00B7ACDE /* DescriptionVC.swift */,
@@ -146,6 +173,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		285FBB33B2F5584AAF2C0028 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CD8BD38BBA6AC6E1554D486 /* Pods-HarryPotter.debug.xcconfig */,
+				FD14FCBC9F7D904797CBB22B /* Pods-HarryPotter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C315F8880801E4D02F0B36B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				598E3ED4063B9BB37FC5C05F /* Pods_HarryPotter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03D4F81D299EF8BB00B7ACDE /* Build configuration list for PBXNativeTarget "HarryPotter" */;
 			buildPhases = (
+				C9054185EF29F026A4C2C3BD /* [CP] Check Pods Manifest.lock */,
 				03D4F805299EF8B300B7ACDE /* Sources */,
 				03D4F806299EF8B300B7ACDE /* Frameworks */,
 				03D4F807299EF8B300B7ACDE /* Resources */,
+				2E19004386722E2D3E74AA29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,12 +251,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D4F819299EF8BB00B7ACDE /* LaunchScreen.storyboard in Resources */,
+				038B6E862A04197500EE5B28 /* GoogleService-Info.plist in Resources */,
 				03D4F816299EF8BB00B7ACDE /* Assets.xcassets in Resources */,
 				03D4F814299EF8B300B7ACDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E19004386722E2D3E74AA29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HarryPotter/Pods-HarryPotter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HarryPotter/Pods-HarryPotter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HarryPotter/Pods-HarryPotter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9054185EF29F026A4C2C3BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HarryPotter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03D4F805299EF8B300B7ACDE /* Sources */ = {
@@ -224,12 +313,15 @@
 				03D4F83B299FEE6D00B7ACDE /* APIHandler.swift in Sources */,
 				03D4F839299FED2D00B7ACDE /* DescriptionVC.swift in Sources */,
 				03D4F80D299EF8B300B7ACDE /* AppDelegate.swift in Sources */,
+				038B6E8D2A043CE000EE5B28 /* SignUpVC.swift in Sources */,
+				038B6E882A041FCE00EE5B28 /* User.swift in Sources */,
 				03D4F80F299EF8B300B7ACDE /* SceneDelegate.swift in Sources */,
 				03D4F826299EF95800B7ACDE /* Constants.swift in Sources */,
 				03D4F828299EF9A400B7ACDE /* CategoryCell.swift in Sources */,
 				03D4F82E299EFA8700B7ACDE /* PersonData.swift in Sources */,
 				0371EB7C29DE0BFB00D508F6 /* HouseVC.swift in Sources */,
 				0371EB6D29D6247600D508F6 /* SpellsData.swift in Sources */,
+				038B6E8B2A043C5400EE5B28 /* LoginVC.swift in Sources */,
 				03D4F833299F33D000B7ACDE /* PeopleVC.swift in Sources */,
 				038E26FF29F838E900B29EE0 /* SpellsCell.swift in Sources */,
 				03D4F82A299EF9D200B7ACDE /* Category.swift in Sources */,
@@ -376,6 +468,7 @@
 		};
 		03D4F81E299EF8BB00B7ACDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD8BD38BBA6AC6E1554D486 /* Pods-HarryPotter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -404,6 +497,7 @@
 		};
 		03D4F81F299EF8BB00B7ACDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD14FCBC9F7D904797CBB22B /* Pods-HarryPotter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
