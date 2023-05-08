@@ -8,8 +8,8 @@
 import Foundation
 
 struct User {
-    
-    var name: String
+    var uid: String
+    var username: String
     var email: String
     
 }

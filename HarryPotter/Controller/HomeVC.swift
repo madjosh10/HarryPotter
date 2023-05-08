@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import FirebaseAuth
+
 
 class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
+    private let firebaseAuth = Auth.auth()
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,10 +23,21 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         tableView.delegate = self
         tableView.dataSource = self
         
+//        navigationItem.leftBarButtonItem = "Logout"
+        
         navigationItem.title = HOME
         
     }
     
+    @IBAction func logoutClicked(_ sender: Any) {
+        do {
+            try firebaseAuth.signOut()
+            dismiss(animated: true, completion: nil)
+            
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.people_Categories.count

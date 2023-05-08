@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--tabBar-->
+        <!--Tab Bar Controller-->
         <scene sceneID="cCR-Lt-2wh">
             <objects>
-                <tabBarController title="tabBar" id="odb-BJ-Gfc" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="odb-BJ-Gfc" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="l05-gz-Fab"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="4M7-KQ-ivn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -104,7 +104,19 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rW2-CT-kyS" secondAttribute="trailing" id="z9N-Cv-eoe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Category" prompt="Harry Potter" id="1lg-25-BFw"/>
+                    <navigationItem key="navigationItem" title="Category" prompt="Harry Potter" id="1lg-25-BFw">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" style="plain" id="mDO-Be-rMk">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="148-tg-MeH">
+                                <rect key="frame" x="302" y="39" width="92" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <connections>
+                                <action selector="logoutClicked:" destination="BYZ-38-t0r" id="6pC-G0-5K4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="rW2-CT-kyS" id="3Ce-JI-Tsk"/>
                         <segue destination="yAR-eQ-Pwl" kind="show" identifier="toCategorySelected" id="zih-ml-YFL"/>
@@ -482,7 +494,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="PyK-af-oaV">
-                                <rect key="frame" x="20" y="169" width="374" height="258.5"/>
+                                <rect key="frame" x="20" y="169" width="374" height="318.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wly-HN-vqY">
                                         <rect key="frame" x="45.5" y="0.0" width="283.5" height="58.5"/>
@@ -491,10 +503,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jaZ-XJ-UA4">
-                                        <rect key="frame" x="0.0" y="98.5" width="374" height="160"/>
+                                        <rect key="frame" x="0.0" y="98.5" width="374" height="220"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ymh-iY-rBE">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="708-ml-e7b">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="0tw-JU-f5l"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ymh-iY-rBE">
+                                                <rect key="frame" x="0.0" y="60" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="uik-O6-c92"/>
                                                 </constraints>
@@ -502,7 +522,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tb1-Fp-xNn">
-                                                <rect key="frame" x="0.0" y="60" width="374" height="40"/>
+                                                <rect key="frame" x="0.0" y="120" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="drF-Ti-UIP"/>
                                                 </constraints>
@@ -510,7 +530,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzN-Aa-K9w" customClass="RoundButton" customModule="HarryPotter" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="120" width="374" height="40"/>
+                                                <rect key="frame" x="0.0" y="180" width="374" height="40"/>
                                                 <color key="backgroundColor" red="0.82745098039999998" green="0.65098039220000004" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="n7U-PP-xfR"/>
@@ -547,6 +567,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="ymh-iY-rBE" id="vbC-xE-OZk"/>
                         <outlet property="passwordTextField" destination="tb1-Fp-xNn" id="WPe-dr-N68"/>
+                        <outlet property="usernameTextField" destination="708-ml-e7b" id="JMp-xZ-Fws"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JRt-CJ-1un" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

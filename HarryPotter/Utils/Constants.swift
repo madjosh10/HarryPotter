@@ -36,3 +36,6 @@ let HOME = "home"
 // identifiers
 let CATEGORY_CELL : String = "categoryCell"
 let TO_CATEGORY_SELECTED : String = "toCategorySelected"
+
+let LOGIN_TO_MAIN: String = "loginToMain"
+let SIGNUP_TO_MAIN: String = "signupToMain"
